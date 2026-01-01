@@ -22,17 +22,3 @@ Eine kleine, eigene E-Commerce Plattform als Lernprojekt — gebaut mit **Django
 ### Voraussetzungen
 - Python 3.12+ (oder deine bevorzugte aktuelle Version)
 - PostgreSQL (lokal) **oder** Docker
-
-### Konfiguration
-Lege eine `.env` Datei an (nicht committen). Beispiel:
-
-```env
-DEBUG=1
-SECRET_KEY=change-me
-ALLOWED_HOSTS=localhost,127.0.0.1
-
-DB_NAME=shop
-DB_USER=shop
-DB_PASSWORD=shop
-DB_HOST=127.0.0.1
-DB_PORT=5432
