@@ -1,0 +1,70 @@
+# ===== Python =====
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# ===== Virtualenv =====
+.venv/
+venv/
+ENV/
+env/
+
+# ===== Packaging / build =====
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ===== Unit tests / coverage =====
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+.nox/
+
+# ===== Type checking =====
+.mypy_cache/
+.pyre/
+.pytype/
+
+# ===== Django =====
+*.log
+local_settings.py
+db.sqlite3
+db.sqlite3-journal
+
+# Collected static (falls du es lokal sammelst)
+staticfiles/
+
+# User uploads (Media)
+media/
+
+# ===== Environment / secrets =====
+.env
+.env.*
+!.env.example
+
+# ===== IDEs =====
+.vscode/
+.idea/
+*.iml
+
+# ===== OS =====
+.DS_Store
+Thumbs.db
+
+# ===== Jupyter =====
+.ipynb_checkpoints/
+
+# ===== Node (falls später für tooling) =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# ===== Docker =====
+*.pid
+*.log
