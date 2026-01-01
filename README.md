@@ -1,6 +1,6 @@
 # Django E-Commerce (Lernprojekt)
 
-Eine kleine, eigene E-Commerce Plattform als Lernprojekt — gebaut mit **Django (neueste Version)**, **Django Templates** und **PostgreSQL**.
+Eine kleine, eigene E-Commerce Plattform als Lernprojekt — gebaut mit **Django (Version 6.0)**, **Django Templates** und **PostgreSQL**.
 
 ## Ziele (MVP)
 - Produktkatalog (Kategorien, Produktdetail, Suche, Pagination)
