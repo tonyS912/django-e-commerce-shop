@@ -1,6 +1,6 @@
 # Django E-Commerce (Lernprojekt)
 
-Eine kleine, eigene E-Commerce Plattform als Lernprojekt — gebaut mit **Django (Version 6.0)**, **Django Templates** und **PostgreSQL**.
+Eine kleine, eigene E-Commerce Plattform als Lernprojekt — gebaut mit **Django (Version 6.0)**, **Django Templates** und **PostgreSQL**. Zum starten in einem Docker Container mittels `docker compose up -d`
 
 ## Ziele (MVP)
 - Produktkatalog (Kategorien, Produktdetail, Suche, Pagination)
