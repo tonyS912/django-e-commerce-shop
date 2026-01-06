@@ -1,24 +1,25 @@
-# Django E-Commerce (Lernprojekt)
+# Django E-Commerce (Learning Project)
 
-Eine kleine, eigene E-Commerce Plattform als Lernprojekt — gebaut mit **Django (Version 6.0)**, **Django Templates** und **PostgreSQL**.
+A small, custom e-commerce platform built as a learning project — using **Django (version 6.0)**, **Django templates**, and **PostgreSQL**.  
+To start it in a Docker container, run: `docker compose up -d`
 
-## Ziele (MVP)
-- Produktkatalog (Kategorien, Produktdetail, Suche, Pagination)
-- Warenkorb (Session-basiert)
-- Checkout + Bestellungen (Order/OrderItems als Snapshot)
-- Auth (Registrierung/Login, Profil, Bestellhistorie)
-- Admin-Bereich zur Pflege von Produkten und Bestellungen
+## Goals (MVP)
+- Product catalog (categories, product detail page, search, pagination)
+- Shopping cart (session-based)
+- Checkout + orders (Order/OrderItems as a snapshot)
+- Auth (sign up/login, profile, order history)
+- Admin area for managing products and orders
 
-## Tech-Stack
-- Django (Templates)
+## Tech Stack
+- Django (templates)
 - PostgreSQL
-- (optional) Docker für lokale DB
-- (optional) Stripe für Payments
+- (optional) Docker for a local database
+- (optional) Stripe for payments
 
 ---
 
-## Lokales Setup (Entwicklung)
+## Local Setup (Development)
 
-### Voraussetzungen
-- Python 3.12+ (oder deine bevorzugte aktuelle Version)
-- PostgreSQL (lokal) **oder** Docker
+### Prerequisites
+- Python 3.12+ (or your preferred recent version)
+- PostgreSQL (local) **or** Docker
