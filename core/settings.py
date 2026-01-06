@@ -35,12 +35,18 @@ ALLOWED_HOSTS = ["localhost", "0.0.0.0", "127.0.0.1"]
 # Application definition
 
 INSTALLED_APPS = [
+    # Theme apps
+    "jazzmin",
+    # Django apps
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    # Third-party apps
+    # Local apps
+    "shop.apps.ShopConfig",
 ]
 
 MIDDLEWARE = [
