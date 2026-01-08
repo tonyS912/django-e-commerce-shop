@@ -38,12 +38,14 @@ def product_list(request, category_slug=None):
         # Important: get_object_or_404 needs lookup kwargs (usually slug=category_slug).
         category = get_object_or_404(Category)
 
+        products = products.filter(category=category)
+
         # Render the catalog page with category navigation + (optionally filtered) product list.
-        return render(
-            request,
-            "shop/product/list.html",
-            {"category": category, "categories": categories, "products": products},
-        )
+    return render(
+        request,
+        "shop/product/list.html",
+        {"category": category, "categories": categories, "products": products},
+    )
 
 
 # Create a view to get a detail for a products.
