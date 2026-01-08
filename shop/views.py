@@ -36,7 +36,7 @@ def product_list(request, category_slug=None):
         # Resolve the category or return 404 if the slug does not exist.
         # (This prevents showing an empty page for a non-existent category.)
         # Important: get_object_or_404 needs lookup kwargs (usually slug=category_slug).
-        category = get_object_or_404(Category)
+        category = get_object_or_404(Category, slug=category_slug)
 
         products = products.filter(category=category)
 
