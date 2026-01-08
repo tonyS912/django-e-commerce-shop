@@ -1,4 +1,5 @@
 from django.db import models
+from django.urls import reverse
 
 
 # Represents a product category; used for navigation and SEO-friendly URLs.
@@ -21,6 +22,11 @@ class Category(models.Model):
     # Readable representation in admin dropdowns, logs, etc.
     def __str__(self):
         return self.name
+
+    # Reverse the Product List by Category on the absolute URL
+    # Return Category Object
+    def get_absolute_url(self):
+        return reverse("shop:product_list_by_category", args=[self.slug])
 
 
 # Represent a product.
@@ -68,3 +74,8 @@ class Product(models.Model):
     # Readable representation in admin dropdowns, logs, etc.
     def __str__(self):
         return self.name
+
+    # Reverse the Product Detail on the absolute URL
+    # Return Produkt Object
+    def get_absolute_url(self):
+        return reverse("shop:product_detail", args=[self.id, self.slug])
