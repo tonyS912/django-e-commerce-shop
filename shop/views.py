@@ -4,6 +4,7 @@ from django.shortcuts import get_object_or_404, render
 # - Category: for navigation and (optional) filtering
 # - Product: the items shown in the storefront listing
 from .models import Category, Product
+from cart.forms import CartAddProductForm
 
 
 # Create a view to list all the products.
@@ -51,4 +52,9 @@ def product_list(request, category_slug=None):
 # Create a view to get a detail for a products.
 def product_detail(request, id, slug):
     product = get_object_or_404(Product, id=id, slug=slug, available=True)
-    return render(request, "shop/product/detail.html", {"product": product})
+    cart_product_form = CartAddProductForm()
+    return render(
+        request,
+        "shop/product/detail.html",
+        {"product": product, "cart_product_form": cart_product_form},
+    )
