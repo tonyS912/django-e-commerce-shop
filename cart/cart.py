@@ -21,7 +21,7 @@ class Cart:
 
         self.cart = cart  # create cart dictionary
 
-    def add(self, product, quantity=1, override_quanitity=False):
+    def add(self, product, quantity=1, override_quantity=False):
         """
         Add a product to the cart or update its quantity.
 
