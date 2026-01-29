@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     # Third-party apps
     # Local apps
     "cart.apps.CartConfig",
+    "orders.apps.OrdersConfig",
     "shop.apps.ShopConfig",
 ]
 
